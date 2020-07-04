@@ -1,0 +1,121 @@
+ 
+{
+  "liveSassCompile.settings.formats": [
+    // More Complex
+    {
+      "format": "compressed",
+      "extensionName": ".min.css",
+      "savePath": "~/../css/"
+    }
+  ],
+  "better-comments.tags": [
+    {
+      "tag": "!",
+      "color": "#FF2D00",
+      "strikethrough": false,
+      "backgroundColor": "transparent"
+    },
+    {
+      "tag": "?",
+      "color": "#3498DB",
+      "strikethrough": false,
+      "backgroundColor": "transparent"
+    },
+    {
+      "tag": "//",
+      "color": "#474747",
+      "strikethrough": true,
+      "backgroundColor": "transparent"
+    },
+    {
+      "tag": "todo",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "backgroundColor": "transparent"
+    },
+    {
+      "tag": "*",
+      "color": "#98C379",
+      "strikethrough": false,
+      "backgroundColor": "transparent"
+    },
+    {
+      "tag": "^",
+      "color": "#c2fc02",
+      "strikethrough": false,
+      "backgroundColor": "transparent"
+    }
+  ],
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          //following will be in italics (=Pacifico)
+          "comment",
+          "entity.name.type.class", //class names
+          "keyword", //import, export, return…
+          //"support.class.builtin.js", //String, Number, Boolean…, this, super
+          "storage.modifier", //static keyword
+          "storage.type.class.js", //class keyword
+          "storage.type.function.js", // function keyword
+          "storage.type.js", // Variable declarations
+          "keyword.control.import.js", // Imports
+          "keyword.control.from.js", // From-Keyword
+          //"entity.name.type.js", // new … Expression
+          "keyword.control.flow.js", // await
+          "keyword.control.conditional.js", // if
+          "keyword.control.loop.js", // for
+          "keyword.operator.new.js" // new
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": [
+          //following will be excluded from italics (My theme (Monokai dark) has some defaults I don't want to be in italics)
+          "invalid",
+          "keyword.operator",
+          "constant.numeric.css",
+          "keyword.other.unit.px.css",
+          "constant.numeric.decimal.js",
+          "constant.numeric.json",
+          "entity.name.type.class.js"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "editor.fontFamily": "Operator Mono Lig",
+  "editor.fontLigatures": true,
+  "editor.formatOnSave": true,
+  "editor.fontSize": 20,
+  "editor.tabSize": 2,
+  "eslint.format.enable": true,
+  "eslint.alwaysShowStatus": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.trailingComma": "none",
+  "editor.folding": true,
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.lineHeight": 26,
+  "editor.lineNumbers": "on",
+  "editor.minimap.enabled": false,
+  "editor.overviewRulerBorder": false,
+  "explorer.openEditors.visible": 0,
+  "window.zoomLevel": 1,
+  "workbench.statusBar.visible": true,
+  "breadcrumbs.enabled": false,
+  "window.menuBarVisibility": "toggle",
+  "workbench.iconTheme": "helium-icon-theme",
+  "workbench.colorTheme": "Code Blue",
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 3000
+}
