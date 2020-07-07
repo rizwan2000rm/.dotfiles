@@ -64,6 +64,13 @@ alias cp="cp -i"                                                # Confirm before
 alias df='df -h'                                                # Human-readable sizes
 alias free='free -m'                                            # Show sizes in MB
 alias gitu='git add . && git commit && git push'
+# CUSTOM ALIAS
+alias mv="mv -i"
+alias rm="rm -i"
+alias gs="git status"
+alias ls="exa -la -G --color=auto --git"
+alias lt="exa -T -L=2 -l --color=auto"
+alias ggpush="git push origin master"
 
 # Theming section  
 autoload -U compinit colors zcalc
